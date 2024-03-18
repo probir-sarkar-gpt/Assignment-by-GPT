@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="path/to/your/favicon.ico" type="image/x-icon">
+	<title>Assignment by GPT</title>
+	<link rel="stylesheet" href="prac2.css">
+</head>
+<body>
+  <header>
+    <div class="navbar ">
+        <div id="navlogo" class="border">
+            <div id="nav1">
+                 <h2>GPT's Table</h2>
+             </div>
+         </div>
+          <div class="deliver">
+            <input type="submit" value=" Label text or value " >
+         </div>
+         <div class="nav-search">
+         <i class="fa-solid fa-magnifying-glass searchcon"></i>
+          <input id="search-input" type="text" placeholder="Search" class="inputSearch">
+        </div>
+          
+          <div class="Delete">  
+            <button id="deleteButton"><i class="fas fa-trash-alt"></i> Delete</button>   
+        </div>
+
+          <div class="Filter">
+            <button id="filterButton"><i class="fas fa-filter"></i> Filters</button>
+            <select id="filterDropdown" style="display: none;">
+              <option value="all">All</option> <!-- Add an option to show all rows -->
+            </select>
+          </div>
+
+          <div class="Export">
+            <button id="exportButton"><i class="fas fa-cloud-download-alt"></i> Export</button>
+          </div>
+
+          <div class="CTA">
+            <input type="submit" value=" +  Add new CTA" >
+          </div>
+      </div>
+  </header>
+
+<!----------------------- TABLE WORK ------------------------->
+  <table id="myTable" class="table-sortable">
+      <thead>
+        <tr>
+          <th><input type="checkbox" id="selectAll"></th>
+          
+          <th >ID </th>
+          <th>Name</th>
+          <th>Rank </th>
+          <th>Price(USD) </th>
+          <th>Percentange Change(24h) </th>
+          <th>Price(BTC) </th>
+          <th>Market Cap </th>
+          <th>Status</th>
+        </tr>
+      </thead >
+      <tbody id="table_body">
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="R1">Bold text column</td>
+          <td>Regular Text Column</td>
+          <td>Regular Text Column</td>
+          <td>Regular Text Column</td>
+          <td>Regular Text Column</td>
+          <td><div class="state">
+            <div class="active"><p>Active</p></div>
+          </div></td>
+          <td>Regular Text Column</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="R1">Bold text column</td>
+          <td>Regular Text Column</td>
+          <td>Regular Text Column</td>
+          <td>Regular Text Column</td>
+          <td>Regular Text Column</td>
+          <td><div class="state">
+            <div class="Inactive"><p>Inactive</p></div>
+          </div></td>
+          <td>Regular Text Column</td>
+          <td>...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="not-found-message" style="display: none; text-align: center;">No results found</div>
+
+    <!------------------ Pagination ------------------------------------------>
+    <div id="pager">
+      <ul class="pg-pager">
+        <li class="pg-item"><a href="#" class="pg-link">1</a></li>
+        <li class="pg-item"><a href="#" class="pg-link">2</a></li>
+        <li class="pg-item"><span class="pg-ellipsis">...</span></li>
+        <li class="pg-item"><a href="#" class="pg-link">8</a></li>
+        <li class="pg-item pg-active"><a href="#" class="pg-link">9</a></li>
+        <li class="pg-item"><a href="#" class="pg-link">10</a></li>
+        <li class="pg-item"><a href="#" class="pg-link">11</a></li>
+        <li class="pg-item"><span class="pg-ellipsis">...</span></li>
+        <li class="pg-item"><a href="#" class="pg-link">20</a></li>
+      </ul>
+    </div>
+  
+    <div id="pager">
+      <ul class="pg-pager">
+        <!-- Pagination items will be dynamically added here -->
+      </ul>
+    </div>
+
+	<script src="prac2_js.js"></script>
+<!-- 	<script src="prac2_js2.js"></script> -->
+</body>
+
+</html>
