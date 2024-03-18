@@ -1,0 +1,3 @@
+{
+    "rewrites": [{ "source": "/(.*)", "destination":"/prac_html.html"}]
+}
